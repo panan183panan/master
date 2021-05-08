@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+	<div style="width: 500px;height: 200px;margin-left: 60px;">
+		<button id="btn1" class="bt" onclick="btn(1)">按钮1</button>
+		<button id="btn2" class="bt" onclick="btn(2)">按钮2</button>
+		<button id="btn3" class="bt" onclick="btn(3)">按钮3</button>
+	</div>
+
+
+  <div class="box" style="width: 500px;height: 200px;margin: auto;margin-top: 60px;">
+	  <span class="text" id="text1" style="font-size: 70px;color: chocolate;">1</span>
+	  <span class="text" id="text2" style="font-size: 70px;color: chocolate;">2</span>
+	  <span class="text" id="text3" style="font-size: 70px;color: chocolate;">3</span>
+  </div>
+  <script>
+    //设置背景颜色
+    //如果设置参数函数会节省函数数量吧
+    //设置flag+参数函数
+    flag = "btn1";
+	document.getElementById("text1").style.display="inline";
+	document.getElementById("text2").style.display="none";
+	document.getElementById("text3").style.display="none";
+    function btn1(){
+      document.getElementById("btn2").style.color = "black";
+      document.getElementById("btn3").style.color = "black";
+      document.getElementById("btn1").style.color = "red";
+    }
+    function btn2(){
+      document.getElementById("btn1").style.color = "black";
+      document.getElementById("btn2").style.color = "red";
+      document.getElementById("btn3").style.color = "black";
+    }
+    function btn3(){
+      document.getElementById("btn1").style.color = "black";
+      document.getElementById("btn2").style.color = "black";
+      document.getElementById("btn3").style.color = "red";
+    }
+    function btn(num){
+      if(num == 1){
+        document.getElementById(flag).style.color = "black";
+        document.getElementById(flag).style.backgroundColor = "white";
+        document.getElementById("btn1").style.color = "white";
+        document.getElementById("btn1").style.backgroundColor = "#808080";
+        flag = "btn1";
+		document.getElementById("text1").style.display="inline";
+		document.getElementById("text2").style.display="none";
+		document.getElementById("text3").style.display="none";
+      }
+      if(num == 2){
+        document.getElementById(flag).style.color = "black";
+        document.getElementById(flag).style.backgroundColor = "white";
+        document.getElementById("btn2").style.color = "white";
+        document.getElementById("btn2").style.backgroundColor = "#808080";
+        flag = "btn2";
+		document.getElementById("text2").style.display="inline";
+		document.getElementById("text1").style.display="none";
+		document.getElementById("text3").style.display="none";
+      }
+      if(num == 3){
+        document.getElementById(flag).style.color = "black";
+        document.getElementById(flag).style.backgroundColor = "white";
+        document.getElementById("btn3").style.color = "white";
+        document.getElementById("btn3").style.backgroundColor = "#808080";
+        flag = "btn3";
+		document.getElementById("text3").style.display="inline";
+		document.getElementById("text2").style.display="none";
+		document.getElementById("text1").style.display="none";
+      }
+    }
+
+  </script>
+</body>
+</html>

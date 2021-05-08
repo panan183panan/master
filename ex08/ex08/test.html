@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+
+<head>
+<body>
+  <table  border="1" cellspacing="0" width="600"> 
+    <thead>  
+    <tr>
+        <td><div>商品名称</div></td>
+        <td><div>数量</div></td>
+        <td><div>价格</div></td>
+        <td><div>操作</div></td>
+    </tr>
+    </thead>
+    <tbody id="aaaa">  
+    <tr>
+        <td>防滑真皮休闲鞋</td>
+        <td><div>123</div></td>
+        <td><div>￥568.50</div></td>
+        <td>
+            <input name="in1" type="button" value="删除" onclick="inasdaa1(this)">
+            <input  type="button"  value="修改" onclick="inAndOut1(this)">
+        </td>
+    </tr>
+    <tr>
+        <td>抗疲劳神奇钛项圈</td>
+        <td><div>123</div></td>
+        <td><div>￥48.00</div></td>
+        <td>
+            <input  name="in1" type="button" value="删除" onclick="inasdaa1(this)">
+            <input  type="button" value="修改" onclick="inAndOut1(this)">
+        </td>
+    </tr>
+    </tbody>
+    <tfoot>  
+    <tr>
+        <td colspan="4">  
+            <input type="button" value="增加订单" onclick="add1(this)">
+        </td>
+    </tr>
+    </tfoot>
+  </table>
+
+  <script type="text/javascript" src="./js/jquery.js"></script>
+
+
+  <script type="text/javascript">
+    function add1(_obj){   //增加一行
+        var a = document.getElementById("aaaa"); //定位在tbody 拿出值
+        var tr = document.createElement("tr");   //创建一个行<tr>
+        tr.innerHTML = "<td>防滑真皮休闲鞋</td>" + "<td><div>123</div>" +"<td><div>￥568.50</div></td>" +"<td>"
+						 + "<input name=\"in1\" type=\"button\" value=\"删除\" οnclick=\"inasdaa1(this)\">" +" "+
+                		"<input  type=\"button\" id=\"id1\" value=\"修改\" οnclick=\"inAndOut1(this)\">" + "</td>";
+       					 //?上面可能会有一点点乱希望大家仔细看看
+        a.appendChild(tr);  		//将创建的<tr>加入到定位的tbody下
+    }
+
+    function inasdaa1(_obj){ //删除当前行(这里我就不写 script 这个格式了)
+      var a = document.getElementById("aaaa"); //一样 需要找到 表格的父类
+      var a1 = _obj.parentNode.parentNode;  // 找到需要删除的位置 ，当按钮触发时直接传入自己进来 这样就拿到了位置
+      a.removeChild(a1);  // 直接 remove 这个子类
+    }
+  </script>
+</body>
+</html>
+

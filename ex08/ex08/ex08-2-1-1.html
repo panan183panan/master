@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+
+    <style type="text/css">
+        .dt_left{width: 90%;height: 35px;float: left;}
+        .dt_left ul li {margin: 0px 1px;display: block;float: left;}
+        .dt_left ul li button {
+           width: 55px;
+           height: 27px;
+           background-color: #FFFEFB;
+           border: 1px solid #ccc;
+           text-align: center;
+       }
+       /*按钮*/
+       .btns{
+           -webkit-transition:background-color .1s linear;
+           -moz-transition:background-color .1s linear;
+           -o-transition:background-color .1s linear;
+           transition:background-color .1s linear
+       }
+       /*默认——灰色 通常用于取消*/
+        .dt_left ul li .btns-default{background-color:#FFFEFB}
+        .dt_left ul li .btns-default:hover,
+        .dt_left ul li .btns-default:focus,
+        .dt_left ul li .btns-default:active,
+        .dt_left ul li .btns-default.active{
+           background-color:#FFFEFB;
+           border: 1px solid #ccc;
+       }
+       /*成功*/
+        .dt_left ul li .btns-success{
+           background-color:#FFFEFB; 
+           border: 1px solid #ccc;
+       }
+        .dt_left ul li .btns-success:hover,
+        .dt_left ul li .btns-success:focus,
+        .dt_left ul li .btns-success:active,
+       .sactive{
+           color:#fff;
+           background-color:#787b7c !important;
+           border: 1px solid #05A8FE;
+       }
+       .box_top .dt_right{width: 10%;float: left;}
+       .box_top .dt_right img{width: 20px;height: 20px;margin:7px 0 0 3px;}
+       .house_box .box_content{height: auto;}
+       .dt_left a button:visited {background-color: red;}
+    </style>
+
+<head>
+<body>
+    <div class="box_top" style="width: 400px;height: 50px;">
+        <div class="dt_left">
+            <ul>
+                <li><a><button id="bt" type="button" class="btns" name="">按钮1</button></a></li>
+                <li><a><button id="bt" type="button" class="btns btns-default" name="">按钮2</button></a></li>
+                <li><a><button id="bt" type="button" class="btns btns-default" name="">按钮3</button></a></li>
+                <li><a><button id="bt" type="button" class="btns btns-default" name="">按钮4</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box-middle" style="width: 400px;height: 300px;border: 2px solid black;"></div>
+<script type="text/javascript" src="./js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // $('.dt_left li:eq(0)>a>button').addClass('sactive');
+            $('button').click(function(){
+                $('.dt_left li:eq(0)>a>button').removeClass('sactive');
+                $(this).addClass("btns-success").siblings("button").removeClass("btns-success").addClass("btns-default");   
+            });
+
+        }); 
+    </script>
+</body>
+</html>
+

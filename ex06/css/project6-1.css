@@ -1,0 +1,155 @@
+/* .g {
+    position: fixed;
+    top: 58px;
+	width: 1035px;
+	height: 878px;
+	left: -18px;
+    right: 0px;
+	margin: auto;
+	opacity: .7;   
+} */
+
+.box {
+	position: relative;
+	width: 1000px;
+	height: 800px;
+    top: 75px;
+    left: 2px;
+    right: 0px;
+	margin: auto;
+	background-color: #99BD90;
+}
+
+.m-box {
+	position: relative;
+	background-color: white;
+	width: 800px;
+	height: 600px;
+	top: 128px;
+	left: 21px;
+	margin: auto;
+}
+
+.top-box {
+	position: relative;
+	background-color: #99BD90;
+	width: 760px;
+	height: 120px;
+	top: 20px;
+	margin: auto;
+}
+
+.m-box1 {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 720px;
+	height: 120px;
+	top: 20px;
+	margin: auto;
+}
+
+.item {
+	width: 80px;
+	height: 80px;
+	top: 10px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.item:nth-child(5) {
+	background-color: #99BD90;
+	border:2px solid #99BD90;
+}
+
+.n-box{
+	position: relative;
+	background-color: #99BD90;
+	width: 760px;
+	height: 420px;
+	top: 40px;
+	left: 0px;
+	margin: auto;
+}
+
+.left-box {
+	position: relative;
+	float: left;
+	width: 240px;
+	height: 420px;
+	background-color: #99BD90;
+}
+
+
+.left-box2 {
+	position: relative;
+	margin: auto;
+	width: 200px;
+	height: 300px;
+	background-color: #99BD90;
+	top: 20px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.t{
+	background-color: white;
+	border:1px solid black;
+	width: 200px;
+	height: 300px;
+}
+
+
+.left-box3 {
+	position: relative;
+	margin: auto;
+	width: 200px;
+	height: 50px;
+	background-color: #99BD90;
+	top: 40px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.tax {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border:1px solid black;
+	background-color: white;
+}
+
+
+.right-box {
+	float: right;
+	position: relative;
+	margin: auto;
+	width: 520px;
+	height: 420px;
+	background-color: #99BD90;
+}
+
+.right-box2 {
+	position: relative;
+	margin: auto;
+	width: 480px;
+	height: 370px;
+	top: 20px;
+	background-color: #99BD90;
+	/* background-color: white; */
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction:column;
+}
+
+.rt {
+	position: relative;
+	width: 480px;
+	height: 40px;
+	background-color: white;
+	border: 1px solid black;
+}

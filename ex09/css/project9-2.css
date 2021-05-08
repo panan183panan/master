@@ -1,0 +1,121 @@
+.box {
+    width: 1118px;height: 1584px;
+    top: 30px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.box-top{
+    position: relative;
+    width: 1118px;height: 70px;
+    background-color: rgb(90, 139, 247);
+}
+
+.box-top-t{
+    position: relative;
+    width: 1118px;height: 20px;top: 5px;
+    /* background-color: rgb(151, 233, 96); */
+}
+
+.box-top-b{
+    position: relative;
+    width: 1118px;height: 45px;top: 5px;
+    /* background-color: rgb(151, 233, 96); */
+}
+
+.box-middle{
+    position: relative;
+    width: 960px;margin: auto;height: 1500px;top: 30px;
+    /* background-color: rgb(172, 172, 172); */
+
+}
+
+.box-middle-left{
+    position: relative;float: left;
+    width: 630px;height: 1400px;
+    background-color: rgb(255, 255, 255);
+}
+
+.box-middle-right{
+    position: relative;float: right;
+    width: 330px;height: 1400px;
+    /* background-color: rgb(204, 250, 204); */
+}
+
+.box-middle-right-top{
+    position: relative;
+    width: 270px;height: 230px;
+    background-color: rgb(228, 228, 228);
+    margin: auto;
+}
+
+.box-middle-right-middle{
+    position: relative;
+    width: 330px;height: 800px;
+    /* background-color: rgb(199, 192, 238); */
+}
+
+.box-middle-right-middle-item{
+    position: relative;margin: auto;
+    width: 270px;height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(186, 186, 187);
+    border-bottom: 4px solid rgb(165, 140, 240);
+}
+
+.box-right-bottom{
+    position: relative;margin: auto;
+    width: 270px;height: 200px;
+    /* background-color: rgb(144, 144, 144); */
+    border: 1px solid rgb(195, 195, 195);
+}
+
+.box-middle-left-top{
+    position: relative;margin: auto;
+    width: 560px;height: 230px;margin-top: 10px;
+    background-color: rgb(117, 117, 117);
+}
+
+.box-middle-left-middle1{
+    position: relative;margin: auto;
+    width: 560px;height: 180px;
+    /* background-color: blue; */
+    border: 2px solid rgb(185, 185, 185);
+}
+
+.box-middle1-left{
+    position: relative;float: left;
+    width: 360px;height: 180px;
+    background-color: rgb(255, 255, 255);
+    border-right: 2px solid rgb(185, 185, 185);
+}
+
+.box-middle1-right{
+    position: relative;float: right;
+    width: 196px;height: 180px;
+    background-color: rgb(231, 231, 231);
+}
+
+.box-middle1-right1{
+    position: relative;float: right;
+    width: 185px;height: 180px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.box-middle1-right2{
+    position: relative;float: right;
+    width: 278px;height: 180px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(185, 185, 185);
+}
+.ig{
+    position: absolute;
+    margin-top: -90px;margin-left: 10px;
+}
+.p{
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: blue;color: white;
+    margin-top: -200px;margin-left: 70px;
+}

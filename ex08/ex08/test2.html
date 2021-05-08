@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: absolute;
+        border-radius: 50px;
+    }
+    </style>
+</head>
+    <body>
+        <button id="btn">开始</button>
+        <div id="myDiv" style="top: 50px;left:10px"></div>
+        
+        <script>
+            let btnMy = document.getElementById("btn");
+            let btnDiv = document.getElementById("myDiv");
+            let toRight ='on';
+            let toBottom ='on';
+            //左右移动
+            let move = function(){
+                let divLeft = parseInt(myDiv.style.left);
+                if(toRight == 'on' && divLeft < innerWidth -100){
+                    myDiv.style.left = parseInt(divLeft) + 1 +'px';
+                }else if(divLeft == innerWidth - 100 || toRight == 'off'){
+                    toRight = 'off';
+                    myDiv.style.left = parseInt(divLeft) - 1 + 'px';
+                    if(divLeft == 0){
+                        toRight = 'on'
+                    }
+                }
+                // 上下移动
+                let divTop = parseInt(myDiv.style.top)
+                if(toBottom == 'on' && divTop < innerHeight -100){
+                    myDiv.style.top = parseInt(divTop) + 1 +'px';
+                }else if(divTop == innerHeight - 100 || toBottom == 'off'){
+                    toBottom ='off';
+                    myDiv.style.top = parseInt(divTop) - 1 + 'px';
+                    if(divTop == 0){
+                        toBottom ='on'
+                    }
+                }
+            }
+            // 绑定按钮跟需要移动的元素
+            let stop;
+            btnMy.onclick = function(){
+                console.log(btn.innerText)
+                if(btn.innerText == '开始'){
+                    btn.innerText = '暂停'
+                    stop = setInterval(move,1)
+                }else{
+                    btn.innerText = '开始';
+                    clearInterval(stop)
+                }
+            }
+        </script>
+    </body>
+</html>
